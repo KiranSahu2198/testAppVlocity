@@ -1,0 +1,16 @@
+<header class="container-fluid">
+  <a routerLink="/" class="logo col">LoGo</a>
+  <form class="form-inline" class="col-6">
+    <input class="form-control mr-sm-2" type="search" #searchName
+    placeholder="Search" aria-label="Search">
+    <!-- [(ngModel)]="name" (input)="filterItem(searchName.value)" -->
+    <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+  </form>
+  <a href="#" class="user col">Kiran
+    <img src="http://www.fillmurray.com/200/200" alt="" class="rounded-circle">
+  </a>
+
+  <div *ngFor="let item of filteredItems">
+      {{item.name}}
+   </div>
+</header>
